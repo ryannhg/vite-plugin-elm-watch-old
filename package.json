@@ -1,0 +1,20 @@
+{
+  "name": "vite-plugin-elm-watch",
+  "version": "1.0.0",
+  "description": "Use Vite with elm-watch",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "start": "npm i && npm run dev",
+    "dev": "(cd example && npx vite)"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lydell/elm": "0.19.1-12",
+    "elm-watch": "1.2.0-beta.3"
+  }
+}
