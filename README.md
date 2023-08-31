@@ -14,6 +14,9 @@ npm start
 
 ### 🚧 What's not working yet
 
+Here are a few missing things to do before publishing this:
+
 - [x] Page is refreshing when `Main.elm` is changed, we want it not to
-- [ ] Need to check for local `elm-watch` and `elm` installations (to prevent global install step)
-- [ ] Need to run `elm-watch make --optimize` in production, along with minification stuff
+- [ ] Need to check for local installations of `elm-watch` and `elm` (to prevent global install step)
+- [ ] Need to run `elm-watch make --optimize` in production (along with minification and optimization postprocess stuff?)
+- [ ] I noticed the debugger/optimize toggling isn't working as expected, and requires a Vite server restart. Maybe there's a way to invalidate things so we send the new compiled elm-watch JS
