@@ -1,5 +1,5 @@
-import myPlugin from "../src";
+import elmWatchPlugin from "../src";
 
 export default {
-  plugins: [myPlugin()]
+  plugins: [elmWatchPlugin()]
 }

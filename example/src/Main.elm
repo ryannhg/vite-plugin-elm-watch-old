@@ -3,7 +3,6 @@ module Main exposing (main)
 import Browser
 import Html exposing (..)
 import Html.Events
-import Math
 
 
 main : Program () Model Msg
@@ -55,15 +54,8 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    let
-        sum : Int
-        sum =
-            Math.add
-                model.counter
-                0
-    in
     div []
         [ button [ Html.Events.onClick Increment ] [ text "Increment" ]
-        , h1 [] [ text (String.fromInt sum) ]
+        , h1 [] [ text (String.fromInt model.counter) ]
         , button [ Html.Events.onClick Decrement ] [ text "Decrement" ]
         ]
