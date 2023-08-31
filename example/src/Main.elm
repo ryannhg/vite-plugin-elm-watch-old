@@ -60,7 +60,7 @@ view model =
         sum =
             Math.add
                 model.counter
-                200
+                0
     in
     div []
         [ button [ Html.Events.onClick Increment ] [ text "Increment" ]

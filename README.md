@@ -14,6 +14,6 @@ npm start
 
 ### 🚧 What's not working yet
 
-- Page is refreshing when `Main.elm` is changed, we want it not to
-- Need to check for local `elm-watch` and `elm` installations (to prevent global install step)
-- Need to run `elm-watch make --optimize` in production, along with minification stuff
+- [x] Page is refreshing when `Main.elm` is changed, we want it not to
+- [ ] Need to check for local `elm-watch` and `elm` installations (to prevent global install step)
+- [ ] Need to run `elm-watch make --optimize` in production, along with minification stuff
