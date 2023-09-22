@@ -1,5 +1,5 @@
-import './src/Main.elm'
+import Elm from './src/Main.elm'
 
-window.Elm.Main.init({
+let app = Elm.Main.init({
   node: document.getElementById('app')
 })

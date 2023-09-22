@@ -24,7 +24,7 @@ const compileTheCurrentFile = async (filepath) => {
   let outputFilepath = await elmWatchHot({ filepath })
 
   let contents = await fs.readFile(outputFilepath, { encoding: 'utf-8' })
-  return `export default {}; ({ run () { ${contents} window.Elm = this.Elm } }).run()`
+  return `export default ({ run () { ${contents} window.Elm = this.Elm; return window.Elm } }).run()`
 }
 
 let elmWatchHot = async ({ filepath }) => {
