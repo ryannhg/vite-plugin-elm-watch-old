@@ -3,6 +3,7 @@ module Main exposing (main)
 import Browser
 import Html exposing (..)
 import Html.Events
+import Math
 
 
 main : Program () Model Msg
@@ -42,7 +43,7 @@ update : Msg -> Model -> Model
 update msg model =
     case msg of
         Increment ->
-            { model | counter = model.counter + 1 }
+            { model | counter = Math.add model.counter 1 }
 
         Decrement ->
             { model | counter = model.counter - 1 }
